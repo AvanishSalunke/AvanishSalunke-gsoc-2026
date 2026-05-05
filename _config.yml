@@ -1,4 +1,4 @@
-title: Long Haul
+title: Google Summer of Code 2026 - Avanish Salunke
 description: Long Form Jekyll theme built with SASS
 
 url: https://long-haul.netlify.app
@@ -27,13 +27,14 @@ navigation:
       url: /contact
 
 social:
-    github: brianmaierjr
-    twitter: brianmaierjr
-    facebook: brianmaierjr
-    email: brimaidesigns@gmail.com
-    linkedin: brianmaierjr
-    youtube: RickAstleyYT
-    tumblr: i-am-a-fish
+    github: AvanishSalunke
+    twitter: 
+    facebook: 
+    email: avanishsalunke16@gmail.com
+    linkedin: avanishsalunke
+    instagram: toomuchof_avi
+    discord: musicioavi
+    discourse: avanish/summary
 
 google_analytics: "UA-58263416-1"
 

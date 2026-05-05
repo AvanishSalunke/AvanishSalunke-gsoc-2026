@@ -65,29 +65,45 @@ HEADER STYLING
 
 	.container {
 		position: relative;
-		top: 50%;
+		z-index: 1;
+		top: calc(50% + 10px);
 		transform: translateY(-50%);
-		max-width: 800px;
-		overflow: hidden;
+		max-width: 880px;
+		width: 75%;
+		margin: 0 auto;
+		overflow: visible;
 	}
 
 	h1 {
-		font-size: 3em;
+		font-size: 1.8em;
 		line-height: 1;
-		letter-spacing: -3px;
+		letter-spacing: -1px;
+		white-space: nowrap;
 		padding-left: 0;
+		margin: 0 0 0.5rem 0;
+		float: left;
+		width: 100%;
 	}
 
 	nav {
-		float: left;
-		clear: left;
+		margin: 0;
+		width: 100%;
+		display: block;
+		clear: both;
+		position: relative !important;
+		clip: auto !important;
+		overflow: visible !important;
+		max-height: none !important;
 
 		ul {
 			margin: 0;
+			width: auto;
+			display: block;
 
 			li {
-				display: inline;
-				line-height: 3em;
+				display: inline-block !important;
+				width: auto !important;
+				line-height: 2em;
 				background: none;
 				padding: 0 5px;
 				border: none;
@@ -133,6 +149,9 @@ MENU STYLING
 	.nav-collapse {
 		position: relative;
 		max-height: none;
+		clip: auto;
+		overflow: visible;
+		width: auto;
 
 		&.closed {
 			max-height: none;

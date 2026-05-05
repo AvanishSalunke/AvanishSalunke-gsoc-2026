@@ -181,30 +181,47 @@ HEADER STYLING
 
 .header {
 	background-color: $background-color;
-	background-image: url("../img/touring.jpg");
-	background-size: cover;
-	background-position: center center;
+	position: relative;
+	overflow: hidden;
 	color: white;
 	padding: 0;
-	height: 3em;
+	height: 3.5em;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-image: url("../img/touring.jpg");
+		background-size: cover;
+		background-position: center center;
+		filter: brightness(0.4) blur(3px);
+		z-index: 0;
+	}
 
 	.container {
-		padding: 0;
+		position: relative;
+		z-index: 1;
+		padding: 10px 0 0 0;
 		max-width: 100%;
 	}
 
 	h1 {
 		margin: 0;
 		float: left;
-		padding-left: 2rem;
-		font-size: 1em;
-		line-height: 3em;
+		padding-left: 20px;
+		font-size: 0.8em;
+		line-height: 3.5em;
+		letter-spacing: 0;
+		white-space: nowrap;
 		font-family: $sans-serif;
 		font-weight: 800;
-		text-transform: uppercase;
+		text-transform: none;
 
 		a {
-			color: white;
+			color: $yellow;
 			text-decoration: none;
 		}
 	}
