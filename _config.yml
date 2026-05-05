@@ -1,9 +1,9 @@
 title: Google Summer of Code 2026 - Avanish Salunke
-description: Long Form Jekyll theme built with SASS
+description: Google Summer of Code 2026 Blog for Avanish Salunke
 
-url: https://long-haul.netlify.app
+url: https://AvanishSalunke.github.io
 # Only necessary when hosting your site in a sub-directory. Project sites hosted on GitHub Pages are the common use-case of this variable.
-baseurl: # Ex: /project-page
+baseurl: /AvanishSalunke-gsoc-2026
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -36,7 +36,7 @@ social:
     discord: musicioavi
     discourse: avanish/summary
 
-google_analytics: "UA-58263416-1"
+google_analytics: ""
 
 disqus:
-    shortname: brianmaierjr
+    shortname: 
