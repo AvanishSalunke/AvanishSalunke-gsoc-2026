@@ -7,6 +7,9 @@ title: About Avanish Salunke
   <h1 class="pageTitle">About Me</h1>
 
   <div class="about-content">
+    <div class="profile-container">
+      <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Avanish Salunke" class="profile-img">
+    </div>
     <div class="about-box bio-box">
       <p>I’m <strong>Avanish Salunke</strong>, a B.Tech IT student at VJTI, Mumbai, working at the intersection of mathematics and computing. I’m a Google Summer of Code 2026 contributor with GNU Octave, where my project focuses on adding LinearModel and CompactLinearModel objects to the statistics package. This involves designing and implementing structured, MATLAB-like model classes for regression, handling fitting, parameter estimation, and efficient prediction workflows within Octave’s ecosystem. The work focuses on building clean, consistent abstractions that integrate well with the existing codebase and improve usability for statistical modeling. This blog is where I’ll share my weekly progress, what I’m building, and the challenges I run into along the way.</p>
     </div>
@@ -80,6 +83,28 @@ title: About Avanish Salunke
   background: none;
   padding: 0 1rem;
   text-align: justify;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -6px;
+  margin-bottom: 2rem;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+  border: 4px solid #FFDC00;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
 }
 
 .project-details {
