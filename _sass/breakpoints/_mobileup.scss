@@ -190,10 +190,10 @@ HEADER STYLING
 	&::before {
 		content: "";
 		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
+		top: -10px;
+		left: -25px;
+		right: -25px;
+		bottom: -10px;
 		background-image: url("../img/touring.jpg");
 		background-size: cover;
 		background-position: center center;
