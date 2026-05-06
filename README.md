@@ -1,62 +1,38 @@
-![preview Long Haul](/preview.jpg)
+# Google Summer of Code 2026 - GNU Octave
 
-Long Haul is a minimal jekyll theme built with SASS and focuses on long form blog posts. It is meant to be used as a starting point for a jekyll blog/website.
+This repository hosts the development blog for my Google Summer of Code 2026 project with **GNU Octave**.
 
-If you really enjoy Long Haul and want to give me credit somewhere on the internet send or tweet out your experience with Long Haul and tag me [@brianmaierjr](https://twitter.com/brianmaierjr).
+## Project Details
 
-#### [View Demo](http://brianmaierjr.com/long-haul)
+*   **Project Title:** Add LinearModel and CompactLinearModel objects to the statistics package
+*   **Organization:** [GNU Octave](https://www.gnu.org/software/octave/)
+*   **Contributor:** [Avanish Salunke](https://github.com/AvanishSalunke)
+*   **Mentors:** Andreas Bertsatos, Colin B. Macdonald
+*   **Project Portal:** [View on GSoC Portal](https://summerofcode.withgoogle.com/programs/2026/projects/YKFoacXh)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bd29f13b-3754-46d7-9a39-48db2e174b99/deploy-status)](https://app.netlify.com/sites/long-haul/deploys)
+## Abstract
 
-## Features
+The goal of this project is to implement a robust object-oriented framework for linear regression within the GNU Octave Statistics package. By introducing the `LinearModel` and `CompactLinearModel` classes, we aim to provide deep statistical diagnostics and memory-efficient deployment options, significantly improving Octave's MATLAB compatibility and usability for researchers and data scientists.
 
--   Minimal, Type Focused Design
--   Built with SASS
--   SVG Social Icons
--   Responsive Nav Menu
--   XML Feed for RSS Readers
--   Contact Form via Formspree
--   5 Post Loop with excerpt on Home Page
--   Previous / Next Post Navigation
--   Estimated Reading Time for posts
--   Stylish Drop Cap on posts
--   A Better Type Scale for all devices
--   Comments powered by Disqus
--   [Dark Mode support](https://github.com/brianmaierjr/long-haul/blob/master/preview-dark.png) via [prefers-color-scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)
+## About the Blog
 
-## Setup
+This blog is built using **Jekyll** and serves as a public record of my progress throughout the GSoC program. I will be posting weekly updates here to document milestones, technical challenges, and the evolution of the project.
 
-1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Long Haul repo](http://github.com/brianmaierjr/long-haul)
-3. Clone it
-4. [Install Bundler](http://bundler.io/)
-5. Run `bundle install`
-6. Run Jekyll Serve and Watch command`bundle exec jekyll serve -w`
+### Key Sections
+- **Home**: Chronological updates and technical deep-dives.
+- **About**: Background on my journey with Octave and the project mission.
+- **Contributions**: Direct access to my code contributions and pull requests.
+- **Contact**: Links to connect with me via GitHub, LinkedIn, or Discord.
 
-## Site Settings
+## Running Locally
 
-The main settings can be found inside the `_config.yml` file:
+To run this blog on your local machine:
 
--   **title:** title of your site
--   **description:** description of your site
--   **url:** your url
--   **paginate:** the amount of posts displayed on homepage
--   **navigation:** these are the links in the main site navigation
--   **social** diverse social media usernames (optional)
--   **google_analytics** Google Analytics key (optional)
+1.  Ensure you have **Ruby** and **Jekyll** installed.
+2.  Clone this repository: `git clone https://github.com/AvanishSalunke/AvanishSalunke-gsoc-2026.git`
+3.  Install dependencies: `bundle install`
+4.  Start the development server: `bundle exec jekyll serve`
+5.  Open `http://localhost:4000` in your browser.
 
-### Header Option
-
-If you'd like your header to be larger then you can use the option below in you `config.yml` to make it take up half of the vertical space on screens 800px wide and up. _Preview image below._
-
--   **header:** large
-
-![preview Long Haul](/preview-large.png)
-
-## To use on GitHub Pages
-
-To use latest Jekyll and Jekyll Sass Converter on GitHub Pages, <a href="https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/">you can now deploy to a GitHub Pages site using GitHub Actions.</a>
-
-## License
-
-This is [MIT](LICENSE) with no added caveats, so feel free to use this Jekyll theme on your site without linking back to me or using a disclaimer.
+---
+© 2026 Avanish Salunke. Built with Jekyll and ❤️ for Open Source.
