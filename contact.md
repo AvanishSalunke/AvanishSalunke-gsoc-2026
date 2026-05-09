@@ -44,7 +44,6 @@ title: Contact
         </svg>
         <span class="social-name">Instagram</span>
         <span class="social-username">@{{ site.social.instagram }}</span>
-        <span class="social-note">(might be deactivated)</span>
       </a>
       {% endif %}
 
