@@ -6,6 +6,7 @@ url: https://AvanishSalunke.github.io
 baseurl: /AvanishSalunke-gsoc-2026
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
+future: true
 
 # Header Option
 # header: large
@@ -32,7 +33,7 @@ social:
     facebook: 
     email: avanishsalunke16@gmail.com
     linkedin: avanishsalunke
-    instagram: 
+    instagram: toomuchof_avi
     discord: musicioavi
     discourse: avanish/summary
 

@@ -22,7 +22,7 @@ body {
 
 	p,
 	ul {
-		margin: 0 0 2rem;
+		margin: 0 0 1.4rem;
 	}
 }
 
@@ -232,6 +232,11 @@ POST STYLING
 ***************/
 
 .post {
+	p,
+	li {
+		text-align: justify;
+	}
+
 	.postTitle {
 		text-align: center;
 		margin-top: 2rem;

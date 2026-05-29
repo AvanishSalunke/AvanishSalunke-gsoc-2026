@@ -23,7 +23,7 @@ title: About Avanish Salunke
         <p><strong>Project Title:</strong> Add LinearModel and CompactLinearModel objects to the statistics package</p>
         <p><a href="https://summerofcode.withgoogle.com/programs/2026/projects/YKFoacXh" target="_blank">Click here to see my project</a></p>
         
-        <p>This project involves implementing a robust object-oriented framework for linear regression within the GNU Octave Statistics package. By introducing the <code>LinearModel</code> and <code>CompactLinearModel</code> classes, we aim to provide deep statistical diagnostics and memory-efficient deployment options, bringing Octave closer to MATLAB compatibility.</p>
+        <p>The GNU Octave Statistics package currently lacks an object-oriented framework for linear regression, missing the deep statistical diagnostics and memory-efficient deployment options found in MATLAB. This project aims to implement the <code>LinearModel</code> and <code>CompactLinearModel</code> classes to cleanly separate heavy model development from lightweight predictions. It will also modernize the <code>fitlm</code> function to support table inputs and Wilkinson formulas, and introduce a highly efficient <code>stepwiselm</code> function for automated model selection. The classes will include essential methods, extensive BIST testing, and comprehensive documentation, greatly improving Octave's statistical capabilities and MATLAB compatibility.</p>
       </div>
     </div>
 
