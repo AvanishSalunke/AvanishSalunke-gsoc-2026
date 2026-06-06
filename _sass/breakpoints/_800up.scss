@@ -184,10 +184,20 @@ POST STYLING
 	ul,
 	ol,
 	dl,
-	.pageTitle {
+	.pageTitle,
+	.highlight,
+	.highlighter-rouge,
+	pre,
+	.postNav {
 		width: 75%;
 		float: none;
 		margin: 0 auto 1.4rem;
+	}
+
+	.highlight pre,
+	.highlighter-rouge pre {
+		width: 100%;
+		margin: 0;
 	}
 
 	h1,

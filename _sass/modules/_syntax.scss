@@ -4,16 +4,62 @@
   http://sourcey.com
 ***************/
 
-.highlight {
+pre,
+.highlight,
+.highlighter-rouge {
   white-space: pre; 
   overflow: auto; 
   word-wrap: normal; /* horizontal scrolling */
-  -moz-border-radius: 3px; 
-  -webkit-border-radius: 3px; 
-  border-radius: 3px;
-  padding: 20px; 
-  background: #343642;
-  color: #C1C2C3;
+  -moz-border-radius: 6px; 
+  -webkit-border-radius: 6px; 
+  border-radius: 6px;
+  padding: 1.2rem; 
+  background-color: #f5f6f8 !important; /* light gray background */
+  color: #24292e !important; /* dark text */
+  border: 1px solid #e1e4e8 !important;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+  font-size: 0.9em !important;
+  margin-bottom: 1.5rem;
+}
+
+/* Make sure code tag inside pre doesn't get double backgrounds or styling */
+pre code,
+.highlight code,
+.highlighter-rouge code {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  font-size: inherit !important;
+}
+
+/* Styling for inline code tags inside paragraph text and list items */
+p code,
+li code {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  color: #d73a49 !important; /* elegant red for code keywords in light mode */
+  padding: 0.1rem 0.35rem !important;
+  border-radius: 3px !important;
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+  font-size: 0.9em !important;
+  border: none !important;
+}
+
+/* Under dark color scheme, adjust code styles for contrast */
+@media (prefers-color-scheme: dark) {
+  pre,
+  .highlight,
+  .highlighter-rouge {
+    background-color: #1a1a1e !important; /* dark grey to black background */
+    color: #e6e6e6 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  p code,
+  li code {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #e5c07b !important; /* elegant gold/yellow for contrast in dark mode */
+  }
 }
 .highlight .hll { background-color: #ffc; }
 .highlight .gd { color: #2e3436; background-color: #0e1416; }
