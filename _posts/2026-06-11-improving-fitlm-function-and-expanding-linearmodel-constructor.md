@@ -154,7 +154,7 @@ octave:31> y = X * [3; -1] + 0.2 * sin ((1:n)');
 octave:32> mdl = fitlm (X, y)
 ```
 
-```
+```text
 mdl =
 
   Linear regression model:
@@ -164,12 +164,12 @@ mdl =
 
   3x4 table
 
-                   Estimate        SE         tStat        pValue       
-                   _________    _________    ________    ___________    
+                   Estimate        SE         tStat        pValue
+                   _________    _________    ________    ___________
 
-    (Intercept)     0.116189     0.112186     1.03568        0.31486    
-    x1               2.50845     0.492082     5.09763    8.93779e-05    
-    x2             -0.978835    0.0227611    -43.0048              0    
+    (Intercept)     0.116189     0.112186     1.03568        0.31486
+    x1               2.50845     0.492082     5.09763    8.93779e-05
+    x2             -0.978835    0.0227611    -43.0048              0
 
 
 Number of observations: 20, Error degrees of freedom: 17
