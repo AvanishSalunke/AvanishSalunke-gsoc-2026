@@ -5,15 +5,16 @@
 ***************/
 
 pre,
-.highlight,
-.highlighter-rouge {
+div.highlight,
+div.highlighter-rouge,
+figure.highlight {
   white-space: pre; 
-  overflow: auto; 
+  overflow: auto !important; 
   word-wrap: normal; /* horizontal scrolling */
   -moz-border-radius: 6px; 
   -webkit-border-radius: 6px; 
   border-radius: 6px;
-  padding: 1.2rem; 
+  padding: 1.2rem !important; 
   background-color: #f5f6f8 !important; /* light gray background */
   color: #24292e !important; /* dark text */
   border: 1px solid #e1e4e8 !important;
@@ -22,10 +23,26 @@ pre,
   margin-bottom: 1.5rem;
 }
 
+/* Reset nested elements to prevent duplicate borders, backgrounds, and padding */
+div.highlighter-rouge div.highlight,
+div.highlighter-rouge figure.highlight,
+div.highlighter-rouge pre,
+div.highlight pre,
+figure.highlight pre {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  border-radius: 0 !important;
+  width: 100% !important;
+}
+
 /* Make sure code tag inside pre doesn't get double backgrounds or styling */
 pre code,
-.highlight code,
-.highlighter-rouge code {
+div.highlight code,
+div.highlighter-rouge code,
+figure.highlight code {
   background-color: transparent !important;
   color: inherit !important;
   padding: 0 !important;
@@ -49,8 +66,9 @@ li code {
 /* Under dark color scheme, adjust code styles for contrast */
 @media (prefers-color-scheme: dark) {
   pre,
-  .highlight,
-  .highlighter-rouge {
+  div.highlight,
+  div.highlighter-rouge,
+  figure.highlight {
     background-color: #1a1a1e !important; /* dark grey to black background */
     color: #e6e6e6 !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
