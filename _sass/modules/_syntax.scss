@@ -21,6 +21,10 @@ figure.highlight {
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
   font-size: 0.9em !important;
   margin-bottom: 1.5rem;
+  
+  /* Modern standard scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.25) transparent;
 }
 
 /* Reset nested elements to prevent duplicate borders, backgrounds, and padding */
@@ -72,6 +76,7 @@ li code {
     background-color: #1a1a1e !important; /* dark grey to black background */
     color: #e6e6e6 !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
   }
   p code,
   li code {
@@ -99,3 +104,28 @@ li code {
 .highlight .il { color: #8ae234; }
 .highlight .o { color: #989DAA; }
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
+
+/* Custom webkit scrollbar styling for code blocks to match dark scheme */
+pre::-webkit-scrollbar,
+div.highlighter-rouge::-webkit-scrollbar,
+figure.highlight::-webkit-scrollbar {
+  height: 8px;
+}
+pre::-webkit-scrollbar-track,
+div.highlighter-rouge::-webkit-scrollbar-track,
+figure.highlight::-webkit-scrollbar-track {
+  background: transparent;
+}
+pre::-webkit-scrollbar-thumb,
+div.highlighter-rouge::-webkit-scrollbar-thumb,
+figure.highlight::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+  pre::-webkit-scrollbar-thumb,
+  div.highlighter-rouge::-webkit-scrollbar-thumb,
+  figure.highlight::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+}
