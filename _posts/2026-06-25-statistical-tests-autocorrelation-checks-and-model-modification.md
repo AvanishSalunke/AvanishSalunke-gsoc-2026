@@ -2,7 +2,7 @@
 layout: post
 title: "Five new methods for LinearModel"
 date: 2026-06-25
-description: "This week the LinearModel gained five new methods: feval, coefCI, coefTest, dwtest, and addTerms. A mentor meeting also drove two significant changes - how the helper functions are organised inside the file, and proper support for the full modelspec."
+description: "This week the LinearModel gained five new methods: feval, coefCI, coefTest, dwtest, and addTerms."
 ---
 
 <style>
