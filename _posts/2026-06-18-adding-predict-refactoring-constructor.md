@@ -173,7 +173,7 @@ To support `lm_refit`, two new hidden properties were also added to the class: `
 All the code is on this branch:
 [gsoc-2026-linearmodel](https://github.com/AvanishSalunke/statistics/tree/gsoc-2026-linearmodel)
 
----
+--- 
 
 ## Next Steps
 
